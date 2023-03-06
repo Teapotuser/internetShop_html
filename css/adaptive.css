@@ -116,6 +116,13 @@
 }
 }
 
+@media (min-width: 768px) and (max-width: 1066px) {
+    /* Вадим:  для адаптива slick slider-ов*/
+    .right-side {
+        width: 66%;
+    }
+}
+
 @media (min-width: 300px) and (max-width: 501px) {
  
     .img_block {
