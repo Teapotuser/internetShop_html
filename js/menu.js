@@ -39,18 +39,30 @@ if(menuArrows.length > 0){
                         }        
                         
                         parentElem.classList.toggle('_active');
-                        console.log(parentElem);
+                        // console.log(parentElem);
                         // убрать класс _active детям закрытого li
-                        if (!(parentElem.classList.contains('_active'))) {
-                                var children_li = getChildren(parentElem);
+                        /* Вадим убрал if (!(parentElem.classList.contains('_active'))) {
+                                var children_li = getChildren(parentElem); */
                                 // console.log(children_li);
+                        if (true) {
+                                childs = [];
+                                const children_li = getChildren(parentElem);
                                 if(children_li.length > 0){
+                                        for(let index = 0; index < children_li.length; index++){
+                                                const child_li = children_li[index];
+                                                // child_li.classList.remove('_active');
+                                                child_li.className = "";
+                                        }
+                                } 
+                        }
+
+                               /*  if(children_li.length > 0){
                                         for(let index = 0; index < children_li.length; index++){
                                                 const child_li = children_li[index];
                                                 child_li.classList.remove('_active');
                                         }
                                 } 
-                        }
+                        } */
 
                        /*  menuArrow.parentElement.classList.toggle('_active');
                         if(menuArrow.parentElement.parentElement.tagName === 'LI'){

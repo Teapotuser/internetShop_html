@@ -361,7 +361,7 @@
     }
 
     /*Вадим*/
-    .footer-menu-left .f-list-link.open {
+   /*  .footer-menu-left .f-list-link.open {
         padding: 0;
         height: 0;
         overflow: hidden;
@@ -371,7 +371,7 @@
         height: auto;
         overflow: auto;
         padding: 10px 20px;
-    }
+    } */
     /*end of Вадим*/
 
     .footer-menu-container{
