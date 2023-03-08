@@ -158,6 +158,8 @@
     margin-bottom: 3px;
    /*  border-bottom: #fff 1px solid;
     cursor: pointer; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
 }
 
 .f-title-box .button-plus-minus {
@@ -166,6 +168,14 @@
     background-image: url(../images/arrow-up.svg); /*button-minus.svg*/
     background-size: cover;  
     background-repeat: no-repeat;
+}
+
+/* На широком экране компьютера */
+@media(min-width: 767px){
+    .f-title-box .button-plus-minus {
+        display: none;
+        cursor: none;
+    }
 }
 
 .f-title-box p {
@@ -338,6 +348,11 @@
     max-height: 15px;
     max-width: 15px;
     margin-right: 4px;
+}
+
+/* На широком экране компьютера */
+@media(min-width: 767px){
+
 }
 
 @media(max-width: 767px) {

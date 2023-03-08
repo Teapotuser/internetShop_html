@@ -66,6 +66,7 @@
 .cart-product-title{
     font-size: 0.9rem;
     font-family: "Bellota";
+    font-weight: bold;
     /* text-transform: uppercase; */
 }
 
@@ -199,6 +200,13 @@
     margin-bottom: 10px;
 }
 
+.btn-clear-cart:hover {
+    color: #9b9b9b;
+    background-color: #fff;
+    border: 1px solid #9b9b9b;
+    transition: all 0.2s linear;
+}
+
 .btn-buy{
     /*margin: 1.5rem auto 0 auto;
     padding: 12px 20px; */
@@ -222,9 +230,11 @@
     margin-bottom: 10px;
 }
 
-/* .btn-buy:hover{
-    background-color: grey;
-} */
+.btn-buy:hover{
+    background-color: #9b9b9b;
+    /* color: #fff; */
+    transition: all 0.2s linear;
+}
 
 /* Breakpoints / Making responsive*/
 @media (max-width:1080px){

@@ -19,7 +19,7 @@ nav, nav li, nav li a {
 
 /* При открытом бургер меню не дает скролить страницу под ним */
 body._lock{
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .menu__icon{

@@ -198,6 +198,7 @@ function removeCartItem(event){
 
 //Quantity Changes
 function quantityChanged(event){
+    event.preventDefault();
     var input = event.target;
     var id = input.dataset.id; //взять Артикул товара из аттрибута data-id кнопки .add-cartvar id = button.dataset.id;
     //Вернуть элемент массива с id
@@ -219,6 +220,7 @@ function quantityChanged(event){
 
 //Minus button уменьшает Quantity
 function decreaseQuantity(event){
+    event.preventDefault();
     var buttonMinus = event.target;
     var id = buttonMinus.dataset.id; //взять Артикул товара из аттрибута data-id кнопки .add-cartvar id = button.dataset.id;
     //Вернуть элемент массива с id
@@ -241,6 +243,7 @@ function decreaseQuantity(event){
 
 //Plus button увеличивает Quantity
 function increaseQuantity(event){
+    event.preventDefault();
     var buttonPlus = event.target;
     var id = buttonPlus.dataset.id; //взять Артикул товара из аттрибута data-id кнопки .add-cartvar id = button.dataset.id;
     //Вернуть элемент массива с id
