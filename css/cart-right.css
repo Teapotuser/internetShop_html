@@ -113,6 +113,20 @@
     
 }
 
+.cart-minus-quantity {
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+.cart-plus-quantity {
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+.add-to-basket-form-wrapper .img_block__button {
+    width: 60%;
+}
+
 /* .cart-minus-quantity {
     background-image: url(../images/button-minus-quantity.svg);
 }
