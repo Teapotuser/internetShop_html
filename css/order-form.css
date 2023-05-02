@@ -4,6 +4,18 @@
 /*  body {
     background: #f69a73;
  } */
+
+ .form-order-wrapper {
+   display: flex;
+   flex-direction: row;
+
+ }
+
+ .form-order-middle-wrapper {
+   display: flex;
+   flex-direction: column;
+ }
+
  .decor {
     position: relative;
     max-width: 400px;
@@ -19,7 +31,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; */
-
+   
  } 
  .form-inner input[type="text"], .form-inner input[type="email"], .form-inner input[type="number"], .form-inner input[type="password"] {
     display: block;

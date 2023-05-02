@@ -35,7 +35,7 @@ body {
     min-height: 100vh;
     /*Вадим: мешало, возможно, в других броузерах*/
     @media (min-width:300px) and (max-width:1200px) {
-        width: 40%;
+        /* width: 40%; */
     }
 }
 
@@ -124,6 +124,7 @@ header{
     margin-left: 20px;
     min-width: 50px;
     min-height: 50px;
+	z-index: 10;
 }
 
 .header-center .logo img {
