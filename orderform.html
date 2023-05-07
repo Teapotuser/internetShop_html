@@ -183,7 +183,7 @@
                    <!--  Форма адреса -->
                    <form>
                         <div class="form-order-wrapper">
-                            <div class="decor">
+                            <div class="decor form-order-panel">
                                 <!--  <div class="form-left-decoration"></div>
                                 <div class="form-right-decoration"></div> 
                                 <div class="circle"></div> -->
@@ -202,7 +202,7 @@
                                     <!-- <input type="submit" value="Отправить"> -->
                                 </div>                                                   
                             </div>
-                            <div class="form-order-middle-wrapper">
+                            <div class="form-order-middle-wrapper form-order-panel">
                                 <!--  Форма способа доставки -->
                                 <div class="decor">                                                             
                                     <div class="form-inner">
@@ -227,19 +227,19 @@
                                         <h3>Метод оплаты</h3>
                                         <ul>
                                             <li>
-                                                <input type="radio" id="answer-1" name="question" value="answer-1" />
-                                                <label for="answer-1">Наличными</label>
+                                                <input type="radio" id="answer-3" name="question" value="answer-3" />
+                                                <label for="answer-3">Наличными</label>
                                             </li>
                                             <li>
-                                                <input type="radio" id="answer-2" name="question" value="answer-2" />
-                                                <label for="answer-2">Кредитной картой</label>
+                                                <input type="radio" id="answer-4" name="question" value="answer-4" />
+                                                <label for="answer-4">Кредитной картой</label>
                                             </li>
                                         </ul>                                    
                                     </div>  
                                 </div>      
                             </div>
                             <!-- Содержание заказа -->
-                            <div class="decor">                                
+                            <div class="decor form-order-panel">                                
                                 <div class="form-inner">
                                     <h3>Заказ</h3>
                                      <!--  Таблица товаров в корзине -->
@@ -259,8 +259,8 @@
                                             <div class="orderform-cart-item-container orderform-cart-column" data-set="50%">
                                                 <div class="orderform-cart-item">
                                                     <a href="#" class="orderform-cart-title">Мягкая игрушка Овечка Jolly Frances</a>
-                                                    <div>Артикул: NICI1111</div>
-                                                    <div>Размер: 25 см</div>                                                
+                                                    <div class="orderform-cart-article">Артикул: NICI1111</div>
+                                                    <div class="orderform-cart-size">Размер: 25 см</div>                                                
                                                 </div>
                                             </div>  
                                             <div class="orderform-cart-qtysum-container orderform-cart-column" data-set="50%">  
@@ -272,10 +272,31 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="orderform-cart-total">
+                                        <div class="orderform-cart-row">
+                                            <div class="orderform-cart-item-container orderform-cart-column" data-set="50%">
+                                                <div class="orderform-cart-item">
+                                                    <a href="#" class="orderform-cart-title">Мягкая игрушка Овечка Jolly Frances</a>
+                                                    <div class="orderform-cart-article">Артикул: NICI1111</div>
+                                                    <div class="orderform-cart-size">Размер: 25 см</div>                                                
+                                                </div>
+                                            </div>  
+                                            <div class="orderform-cart-qtysum-container orderform-cart-column" data-set="50%">  
+                                                <div class="orderform-cart-quantity">                                                    
+                                                    <span>2</span><span>шт.</span>
+                                                </div>
+                                                <div class="orderform-cart-sum">                                                   
+                                                    <span>53.12</span><span> р.</span> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="orderform-cart-total">
                                             <strong class="main-cart-total-title">Итого:</strong>
                                             <span class="main-cart-total-price">53.12 р.</span>
-                                        </div>  
+                                        </div>   -->
+                                    </div>  
+                                    <div class="orderform-cart-total">
+                                        <strong class="orderform-cart-total-title">Всего:</strong>
+                                        <span class="orderform-cart-total-price">53.12 р.</span>
                                     </div>    
                                     <!-- <input type="submit" value="Отправить"> -->
                                 </div>                                                   
