@@ -4,6 +4,19 @@
 /*  body {
     background: #f69a73;
  } */
+.section-header {
+   font-family: 'Bellota';
+   font-weight: bold;
+   font-size: 26px;
+   letter-spacing: 2px;
+   color: #484848;
+   text-align: center;
+   margin: 20px 10px auto;
+}
+
+.form-order {
+   margin-bottom: 30px;
+}
 
  .form-order-wrapper {
    display: flex;
@@ -57,6 +70,10 @@
     font-family: 'Roboto', sans-serif;
  }
 
+ .form-inner input[type="number"] {
+   -moz-appearance: textfield;
+ }
+
  .form-inner input:active, .form-inner input:hover, .form-inner input:focus {
     outline: 1px;
     outline-color: #e20049;
@@ -77,8 +94,25 @@
     height: 17px;
 }
 
+.form-inner input[type="checkbox"] + label {
+   padding: 0 0 0 12px;
+   /* position: relative; */
+ }
+
 .form-inner label {
     /* margin-left: 10px; */
+    color:#333;   
+}
+
+.form-inner .info-text {
+   color:#333;
+   font-family: 'Roboto', sans-serif;
+   font-size: 15px;
+   margin-top: 53px;
+}
+
+.form-inner input:last-child,  .form-inner label:last-child {
+   margin-bottom: 0px;
 }
 
  .form-inner input[type="submit"] {
@@ -102,14 +136,24 @@
 
 /* radiobuttons */
 .form-inner ul {
-      /* Свойство убравшее отступ в ul списке*/
-      padding-inline-start: 0;
+   /* Свойство убравшее отступ в ul списке*/
+   padding-inline-start: 0;   
+}
+
+.form-inner ul.ul-margin-bottom-zero {
+   margin-block-end: 0px;
+}
+
+.form-inner ul li {
+   margin-top: 3px;
+   margin-bottom: 3px;
 }
 
 .form-inner li {
     list-style: none;
 }
-label {
+
+input[type=radio] + label {
     padding: 0 0 0 2rem;
     position: relative;
   }
@@ -132,14 +176,15 @@ label {
     display: inline-block;
     width: 0.8rem;
     height: 0.8rem;
-    border: 0.05rem solid black;
+    border: 0.05rem solid #333;
     background: white;
   }
-  
+
+  /*выбранная опция*/
   input[type=radio]:checked + label::after {
     left: 0.7rem;
     top: 0.4rem;
-    border: 0.25rem solid black;
+    border: 0.25rem solid #e20049;
   }
   
   input[type=radio]:focus + label::before {
@@ -308,6 +353,7 @@ label {
    display: flex;
    justify-content: end;
    padding-top: 7px;
+   margin-bottom: 25px;
 }
 
 .orderform-cart-total-title{
@@ -327,6 +373,11 @@ label {
    /* letter-spacing: 2px; */
    color: #e20049;
 }
+
+.orderform-center-button {
+   margin: 5px auto;
+   text-align: center;
+  }
 
   @media (min-width: 300px) and (max-width: 900px) {
    .form-order-wrapper {

@@ -193,6 +193,7 @@
 }
 
 .main-cart-button-order {
+    display: inline-block;
     cursor: pointer;
     color: white;
     background-color: #e20049;

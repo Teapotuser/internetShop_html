@@ -179,9 +179,9 @@
             <div class="shop-wrapper">               
                 <!-- левая панель -->                
                 <section class="right-side"> <!-- Правая галерея товаров -->              
-
+                    <h2 class="section-header">Оформление заказа</h2>
                    <!--  Форма адреса -->
-                   <form>
+                   <form class="form-order">
                         <div class="form-order-wrapper">
                             <div class="decor form-order-panel">
                                 <!--  <div class="form-left-decoration"></div>
@@ -189,12 +189,12 @@
                                 <div class="circle"></div> -->
                                 <div class="form-inner">
                                     <h3>Контактная информация</h3>
-                                    <input type="text" placeholder="Имя">
-                                    <input type="text" placeholder="Фамилия">
-                                    <input type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Номер телефона">
-                                    <input type="email" placeholder="Email">
+                                    <input type="text" placeholder="Имя *" minLength="1" maxLength="150" required >
+                                    <input type="text" placeholder="Фамилия *" minLength="1" maxLength="150" required >
+                                    <input type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Номер телефона *" minLength="1" maxLength="20" required >
+                                    <input type="email" placeholder="Email *" minLength="1" maxLength="150" required>
                                     <!-- <textarea placeholder="Сообщение..." rows="3"></textarea> -->
-                                    <p>Вы можете создать аккаунт после оформления заказа</p>
+                                    <p class="info-text">Вы можете создать аккаунт после оформления заказа</p>
                                     <div class="form-inner-checkbox">
                                         <input type="checkbox" id="create-account" name="create-account">
                                         <label for="create-account">Зарегистрировать аккаунт</label>
@@ -209,30 +209,30 @@
                                         <h3>Способ доставки</h3>
                                         <ul>
                                             <li>
-                                                <input type="radio" id="answer-1" name="question" value="answer-1" />
-                                                <label for="answer-1">Самовывоз</label>
+                                                <input type="radio" id="pickup" name="delivery-method" value="pickup" checked />
+                                                <label for="pickup">Самовывоз</label>
                                             </li>
                                             <li>
-                                                <input type="radio" id="answer-2" name="question" value="answer-2" />
-                                                <label for="answer-2">Адресная доставка</label>
+                                                <input type="radio" id="post" name="delivery-method" value="post" />
+                                                <label for="post">Адресная доставка</label>
                                             </li>
                                         </ul>
-                                        <input type="text" placeholder="Город">
-                                        <input type="text" placeholder="Адрес">
+                                        <input type="text" placeholder="Город" maxLength="150" >
+                                        <input type="text" placeholder="Адрес" maxLength="250" >
                                     </div>                               
                                 </div>
                                 <!--  Форма способа оплаты -->
                                 <div class="decor">    
                                     <div class="form-inner">
                                         <h3>Метод оплаты</h3>
-                                        <ul>
+                                        <ul class="ul-margin-bottom-zero">
                                             <li>
-                                                <input type="radio" id="answer-3" name="question" value="answer-3" />
-                                                <label for="answer-3">Наличными</label>
+                                                <input type="radio" id="cash" name="payment-method" value="cash" checked />
+                                                <label for="cash">Наличными</label>
                                             </li>
                                             <li>
-                                                <input type="radio" id="answer-4" name="question" value="answer-4" />
-                                                <label for="answer-4">Кредитной картой</label>
+                                                <input type="radio" id="card" name="payment-method" value="card" />
+                                                <label for="card">Кредитной картой</label>
                                             </li>
                                         </ul>                                    
                                     </div>  
@@ -299,6 +299,10 @@
                                         <span class="orderform-cart-total-price">53.12 р.</span>
                                     </div>    
                                     <!-- <input type="submit" value="Отправить"> -->
+                                    <div class="orderform-center-button">
+                                    <!-- <button type="button" class="main-cart-button-order">Оформить заказ</button> -->
+                                    <a href="#" type="button" class="main-cart-button-order">Оформить заказ</a>
+                                    </div>
                                 </div>                                                   
                             </div>
 
