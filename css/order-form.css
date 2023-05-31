@@ -111,7 +111,7 @@
    margin-top: 53px;
 }
 
-.form-inner input:last-child,  .form-inner label:last-child {
+.form-inner > input:last-child,  .form-inner > label:last-child {
    margin-bottom: 0px;
 }
 
