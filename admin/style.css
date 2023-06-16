@@ -215,12 +215,29 @@ body.dark .sidebar li a:hover .icon .icon-order {
     margin-right: 4px;
 }
 
+body.dark .sidebar li a .icon .icon-product,
+body.dark .sidebar li a:hover .icon .icon-product {
+	display: flex;
+    align-items: center;
+    justify-content: center;	
+	
+    background-image: url(images/noun-teddy-bear-3500508-light-grey.svg);    
+    background-size: cover;   
+	background-repeat: no-repeat;	
+    /* display: inline; */
+    height: 30px;
+    width: 30px;
+    /* max-height: 10px; */
+    max-width: 30px;
+    margin-right: 4px;
+}
+
 .sidebar .icon .icon-collection{   
     display: flex;
     align-items: center;
     justify-content: center;	
 	
-    background-image: url(images/noun-folder-1440711.svg);    
+    background-image: url(images/noun-folder-1366077.svg);    
     background-size: cover;   
 	background-repeat: no-repeat;	
     /* display: inline; */
@@ -236,7 +253,24 @@ body.dark .sidebar li a:hover .icon .icon-order {
     align-items: center;
     justify-content: center;	
 	
-    background-image: url(images/noun-folder-1440711-white.svg);    
+    background-image: url(images/noun-folder-1366077-white.svg);    
+    background-size: cover;   
+	background-repeat: no-repeat;	
+    /* display: inline; */
+    height: 30px;
+    width: 30px;
+    /* max-height: 10px; */
+    max-width: 30px;
+    margin-right: 4px;
+}
+
+body.dark .sidebar li a .icon .icon-collection,
+body.dark .sidebar li a:hover .icon .icon-collection {
+	display: flex;
+    align-items: center;
+    justify-content: center;	
+	
+    background-image: url(images/noun-folder-1366077-light-grey.svg);    
     background-size: cover;   
 	background-repeat: no-repeat;	
     /* display: inline; */
@@ -279,6 +313,23 @@ body.dark .sidebar li a:hover .icon .icon-order {
     margin-right: 4px;
 }
 
+body.dark .sidebar li a .icon .icon-category,
+body.dark .sidebar li a:hover .icon .icon-category {
+	display: flex;
+    align-items: center;
+    justify-content: center;	
+	
+    background-image: url(images/noun-category-3263979-light-grey.svg);    
+    background-size: cover;   
+	background-repeat: no-repeat;	
+    /* display: inline; */
+    height: 30px;
+    width: 30px;
+    /* max-height: 10px; */
+    max-width: 30px;
+    margin-right: 4px;
+}
+
 .sidebar .icon .icon-user{   
     display: flex;
     align-items: center;
@@ -296,11 +347,28 @@ body.dark .sidebar li a:hover .icon .icon-order {
 }
 
 .sidebar li a:hover .icon .icon-user {
-	 display: flex;
+	display: flex;
     align-items: center;
     justify-content: center;	
 	
     background-image: url(images/noun-users-4747587-white.svg);    
+    background-size: cover;   
+	background-repeat: no-repeat;	
+    /* display: inline; */
+    height: 30px;
+    width: 30px;
+    /* max-height: 10px; */
+    max-width: 30px;
+    margin-right: 4px;
+}
+
+body.dark .sidebar li a .icon .icon-user,
+body.dark .sidebar li a:hover .icon .icon-user {
+	display: flex;
+    align-items: center;
+    justify-content: center;	
+	
+    background-image: url(images/noun-users-4747587-light-grey.svg);    
     background-size: cover;   
 	background-repeat: no-repeat;	
     /* display: inline; */
@@ -343,6 +411,23 @@ body.dark .sidebar li a:hover .icon .icon-order {
     margin-right: 4px;
 }
 
+body.dark .sidebar li a .icon .icon-subscribe,
+body.dark .sidebar li a:hover .icon .icon-subscribe {
+	display: flex;
+    align-items: center;
+    justify-content: center;	
+	
+    background-image: url(images/noun-mail-2952858-light-grey.svg);    
+    background-size: cover;   
+	background-repeat: no-repeat;	
+    /* display: inline; */
+    height: 30px;
+    width: 30px;
+    /* max-height: 10px; */
+    max-width: 30px;
+    margin-right: 4px;
+}
+
 .sidebar .icon .icon-logout{   
     display: flex;
     align-items: center;
@@ -374,6 +459,72 @@ body.dark .sidebar li a:hover .icon .icon-order {
     max-width: 30px;
     margin-right: 4px;
 }
+
+body.dark .sidebar li a .icon .icon-logout,
+body.dark .sidebar li a:hover .icon .icon-logout {
+	display: flex;
+    align-items: center;
+    justify-content: center;	
+	
+    background-image: url(images/noun-exit-4692023-light-grey.svg);    
+    background-size: cover;   
+	background-repeat: no-repeat;	
+    /* display: inline; */
+    height: 30px;
+    width: 30px;
+    /* max-height: 10px; */
+    max-width: 30px;
+    margin-right: 4px;
+}
+
+.sidebar .icon .icon-moon{   
+    display: flex;
+    align-items: center;
+    justify-content: center;	
+	
+    background-image: url(images/noun-moon-3388246.svg);    
+    background-size: cover;   
+	background-repeat: no-repeat;	
+    /* display: inline; */
+    height: 30px;
+    width: 30px;
+    /* max-height: 10px; */
+    max-width: 30px;
+    margin-right: 4px;
+}
+
+/* body.dark .mode .sun-moon i.sun */
+body.dark .mode .icon .icon-moon {
+	display: flex;
+    align-items: center;
+    justify-content: center;	
+	
+    background-image: url(images/noun-moon-3388246-light-grey.svg);    
+    background-size: cover;   
+	background-repeat: no-repeat;	
+    /* display: inline; */
+    height: 30px;
+    width: 30px;
+    /* max-height: 10px; */
+    max-width: 30px;
+    margin-right: 4px;
+}
+
+body.dark .mode .icon .icon-sun{
+	display: flex;
+    align-items: center;
+    justify-content: center;	
+	
+    background-image: url(images/noun-sun-1363664.svg);    
+    background-size: cover;   
+	background-repeat: no-repeat;	
+    /* display: inline; */
+    height: 30px;
+    width: 30px;
+    /* max-height: 10px; */
+    max-width: 30px;
+    margin-right: 4px;
+}	
 	
 .sidebar .text,
 .sidebar .icon{
@@ -526,15 +677,41 @@ body.dark .sidebar li a:hover .text{
 .mode .sun-moon i{
     position: absolute;
 }
+
+/* Я добавила */
+.mode .sun-moon .icon{
+    position: absolute;
+}
+
 .mode .sun-moon i.sun{
     opacity: 0;
 }
+
+/* Я добавила */
+.mode .sun-moon .icon-sun{
+    opacity: 0;
+}
+
 body.dark .mode .sun-moon i.sun{
     opacity: 1;
 }
 body.dark .mode .sun-moon i.moon{
     opacity: 0;
 }
+
+/* Я добавила */
+body.dark .mode .sun-moon .icon-sun{
+    opacity: 1;
+}
+/* Я добавила */
+body.dark .mode .sun-moon .icon-moon{
+    opacity: 0;
+}
+
+/* Я добавила */
+.sidebar.close .sun-moon {
+	opacity: 0;
+}	
 
 .menu-bar .bottom-content .toggle-switch{
     position: absolute;
