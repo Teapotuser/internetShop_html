@@ -26,10 +26,10 @@
     --tran-02: all 0.2s ease;
 }
 
-body{
+/* body{
     min-height: 100vh;
     background-color: var(--primary-color);
-}
+} */
 body.dark{
     --primary-color: #3A3B3C;
     --panel-color: #242526;
@@ -64,7 +64,7 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover{
     background: #3A3B3C;
 }
 
-nav{
+/* nav{
     position: fixed;
     top: 0;
     left: 0;
@@ -77,7 +77,7 @@ nav{
 }
 nav.close{
     width: 73px;
-}
+} */
 nav .logo-name{
     display: flex;
     align-items: center;
@@ -104,7 +104,7 @@ nav.close .logo_name{
     opacity: 0;
     pointer-events: none;
 }
-nav .menu-items{
+/* nav .menu-items{
     margin-top: 40px;
     height: calc(100% - 90px);
     display: flex;
@@ -120,8 +120,8 @@ nav .menu-items{
     height: 50px;
     text-decoration: none;
     position: relative;
-}
-.nav-links li a:hover:before{
+} */
+/* .nav-links li a:hover:before{
     content: "";
     position: absolute;
     left: -7px;
@@ -147,8 +147,8 @@ body.dark li a:hover:before{
     font-weight: 400;
     color: var(--black-light-color);    
     transition: var(--tran-05);
-}
-nav.close li a .link-name{
+} */
+/* nav.close li a .link-name{
     opacity: 0;
     pointer-events: none;
 }
@@ -201,20 +201,28 @@ body.dark .nav-links li a:hover .link-name{
 }
 body.dark .switch:before{
     left: 20px;
-}
+} */
 
 .dashboard{
     position: relative;
     left: 250px;
-    background-color: var(--panel-color);
+    /* background-color: var(--panel-color); */
+    background-color: var(--body-color);
+    height: 100vh;
     min-height: 100vh;
     width: calc(100% - 250px);
     padding: 10px 14px;
     transition: var(--tran-05);
 }
-nav.close ~ .dashboard{
-    left: 73px;
-    width: calc(100% - 73px);
+
+/* nav.close ~ .dashboard */
+.sidebar.close ~ .dashboard {
+    /* left: 73px;
+    width: calc(100% - 73px); */
+    left: 88px;
+    height: 100vh;
+    width: calc(100% - 88px);
+    padding: 10px 14px; /* я добавила */
 }
 .dashboard .top{
     position: fixed;
@@ -229,15 +237,18 @@ nav.close ~ .dashboard{
     transition: var(--tran-05);
     z-index: 10;
 }
-nav.close ~ .dashboard .top{
-    left: 73px;
-    width: calc(100% - 73px);
+/* nav.close ~ .dashboard .top */
+.sidebar.close ~ .dashboard .top {
+    /* left: 73px;
+    width: calc(100% - 73px); */
+    left: 88px;    
+    width: calc(100% - 88px);
 }
-.dashboard .top .sidebar-toggle{
+/* .dashboard .top .sidebar-toggle{
     font-size: 26px;
     color: var(--text-color);
     cursor: pointer;
-}
+} */
 .dashboard .top .search-box{
     position: relative;
     height: 45px;
@@ -271,6 +282,9 @@ nav.close ~ .dashboard .top{
     width: 40px;
     border-radius: 50%;
 }
+
+/* Правая панель: квадраты и таблица*/
+
 .dashboard .dash-content{
     padding-top: 50px;
 }
@@ -384,7 +398,7 @@ nav.close ~ .dashboard .top{
         opacity: 1;
         pointer-events: auto;
     }
-    nav ~ .dashboard{
+   /*  nav ~ .dashboard{
         left: 73px;
         width: calc(100% - 73px);
     }
@@ -399,7 +413,7 @@ nav.close ~ .dashboard .top{
     nav.close ~ .dashboard .top{
         left: 250px;
         width: calc(100% - 250px);
-    }
+    } */
     .activity .activity-data{
         overflow-X: scroll;
     }
