@@ -189,6 +189,13 @@
     align-content: center;
 }
 
+.main-cart-clear-cart:hover {
+    color: #9b9b9b;
+    background-color: #fff;
+    border: 1px solid #9b9b9b;
+    transition: all 0.2s linear;
+}
+
 .main-cart-back {
     cursor: pointer;
     color: white;
@@ -205,6 +212,11 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: 2px;
     align-content: center;
+}
+
+.main-cart-back:hover {
+    background-color: #17A2B8;
+    transition: all 0.2s linear;
 }
 
 .main-cart-button-order {
@@ -224,6 +236,11 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: 2px;
     align-content: center;
+}
+
+.main-cart-button-order:hover {
+    background-color: #9b9b9b;
+    transition: all 0.2s linear;
 }
 
 /*Адаптив*/

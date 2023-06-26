@@ -94,21 +94,80 @@
     height: 17px;
 }
 
+/*===== Checkbox стили =====*/
 .form-inner input[type="checkbox"] + label {
    padding: 0 0 0 12px;
    /* position: relative; */
+
+   cursor: pointer;
+   display: flex;
  }
+
+/* прячем input checkbox */
+input[type="checkbox"]#create-account {
+   /* display: none; */
+
+   opacity: 0;
+   width: 0;
+   height: 0;
+   position: absolute;
+ }
+
+ input[type="checkbox"]#create-account:not(:checked) + label path {
+   display: none;
+ }
+
+ input[type="checkbox"]#create-account:checked + label path {
+   fill: #e20049;
+ }
+
+ /* Квадрат checkbox-а */
+.svg-checkbox {
+   border: 1px solid #333;
+   color: #333;
+   background-color: #fff;
+   padding: 2px;
+   width: 18px;
+   border-radius: 3px;
+   margin-right: 12px;
+}
+   
+.svg-checkbox  path {
+     fill: currentColor;
+}
+
+
 
 .form-inner label {
     /* margin-left: 10px; */
     color:#333;   
 }
 
+.form-inner .is-registered-question {
+   font-family: 'Roboto', sans-serif;
+   color: #e20049;
+   font-size: 15px;
+   text-decoration: underline;
+   margin-top: 15px;
+}
+
+.form-inner .is-registered-question:hover {
+   color: #9b9b9b;
+   /* color: #fff; */
+   transition: all 0.2s linear;
+}
+
+.btn-buy:hover{
+   background-color: #9b9b9b;
+   /* color: #fff; */
+   transition: all 0.2s linear;
+}
+
 .form-inner .info-text {
    color:#333;
    font-family: 'Roboto', sans-serif;
    font-size: 15px;
-   margin-top: 53px;
+   margin-top: 20px;
 }
 
 .form-inner > input:last-child,  .form-inner > label:last-child {
@@ -190,6 +249,15 @@ input[type=radio] + label {
   input[type=radio]:focus + label::before {
     outline: 0.05rem dotted;
   }
+
+  .form-inner /* input[type="text"]  */.delivery-address.hidden, .form-inner .password.hidden {
+   display: none;
+   transition: all 0.5s ease;
+  }
+
+  .form-inner .input-margin-top {
+   margin-top: 15px;
+}
 
   /* Логин и регистрация*/
   .form-wrapper {

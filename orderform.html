@@ -191,14 +191,37 @@
                                     <h3>Контактная информация</h3>
                                     <input type="text" placeholder="Имя *" minLength="1" maxLength="150" required >
                                     <input type="text" placeholder="Фамилия *" minLength="1" maxLength="150" required >
-                                    <input type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Номер телефона *" minLength="1" maxLength="20" required >
                                     <input type="email" placeholder="Email *" minLength="1" maxLength="150" required>
+                                    <input type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Номер телефона *" minLength="1" maxLength="20" required >
                                     <!-- <textarea placeholder="Сообщение..." rows="3"></textarea> -->
+                                    <a href="" class="is-registered-question">Вы уже зарегистрированы?</a>
                                     <p class="info-text">Вы можете создать аккаунт после оформления заказа</p>
                                     <div class="form-inner-checkbox">
+                                        <!-- <input type="checkbox" id="create-account" name="create-account">
+                                        <label for="create-account" class="label-checkbox">Зарегистрировать аккаунт</label> -->
+                                    
                                         <input type="checkbox" id="create-account" name="create-account">
-                                        <label for="create-account">Зарегистрировать аккаунт</label>
-                                    </div>                                    
+                                        <label for="create-account">
+                                        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="svg-checkbox">
+                                            <path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/>
+                                        </svg>
+                                        Зарегистрировать аккаунт
+                                        </label>                                       
+                                    </div>                                                                     
+
+                                    <!-- Поля ввода и подтверждения пароля -->
+                                    <div class="">
+                                        <input id="password" type="password" class="form-control input-margin-top password hidden @error('password') is-invalid @enderror" name="password" autocomplete="new-password" placeholder="Пароль *">
+    
+                                        <!-- @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror -->                                    
+                                    </div>                                
+                                    <div class="">
+                                        <input id="password-confirm" type="password" class="form-control password hidden" name="password_confirmation" autocomplete="new-password" placeholder="Подтвердите пароль *">
+                                    </div>
                                     <!-- <input type="submit" value="Отправить"> -->
                                 </div>                                                   
                             </div>
@@ -207,7 +230,7 @@
                                 <div class="decor">                                                             
                                     <div class="form-inner">
                                         <h3>Способ доставки</h3>
-                                        <ul>
+                                        <ul class="ul-margin-bottom-zero">
                                             <li>
                                                 <input type="radio" id="pickup" name="delivery-method" value="pickup" checked />
                                                 <label for="pickup">Самовывоз</label>
@@ -217,8 +240,8 @@
                                                 <label for="post">Адресная доставка</label>
                                             </li>
                                         </ul>
-                                        <input type="text" placeholder="Город" maxLength="150" >
-                                        <input type="text" placeholder="Адрес" maxLength="250" >
+                                        <input type="text" placeholder="Город" class="delivery-address hidden input-margin-top" maxLength="150" >
+                                        <input type="text" placeholder="Адрес" class="delivery-address hidden" maxLength="250" >
                                     </div>                               
                                 </div>
                                 <!--  Форма способа оплаты -->
@@ -300,8 +323,8 @@
                                     </div>    
                                     <!-- <input type="submit" value="Отправить"> -->
                                     <div class="orderform-center-button">
-                                    <!-- <button type="button" class="main-cart-button-order">Оформить заказ</button> -->
-                                    <a href="#" type="button" class="main-cart-button-order">Оформить заказ</a>
+                                    <button type="button" class="main-cart-button-order">Оформить заказ</button>
+                                    <!-- <a href="#" type="button" class="main-cart-button-order">Оформить заказ</a> -->
                                     </div>
                                 </div>                                                   
                             </div>
@@ -441,5 +464,6 @@
 <script src="js/price-control.js" type='text/javascript'></script> 
 <script src="js/slick.min.js" type="text/javascript"></script> 
 <script src="js/cart-right.js" type="text/javascript"></script> 
+<script src="js/orderform-control.js" type="text/javascript"></script>
 </body>
 </html>
