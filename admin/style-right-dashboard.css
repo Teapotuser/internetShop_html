@@ -348,6 +348,236 @@ body.dark .switch:before{
 .boxes .box.box3{
     background-color: var(--box3-color);
 }
+
+/* ===== Таблица Вадим ===== */
+.accounts-list {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.accounts-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.accounts-head > :nth-child(n) {
+    flex: 1;
+    text-align: center;
+}
+
+.account-rows {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    white-space: nowrap;
+    gap: 10px 0px;
+}
+
+.account-card {
+    padding: 20px 30px 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 38px rgba(143, 39, 199, 0.05);
+    background-color: #fff;
+    width: 300px;
+}
+
+.list {
+    width: 100%;
+    padding: 16px 0 16px 0; /* 20px 0 20px 0; */
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+    background-color: transparent;
+    border-radius: 0;
+    /* border-bottom:  1px solid #333; */
+    color: rgb(226,0,73);
+
+    background-color: #fff;
+    border-radius: 8px;
+    
+}
+
+.account-card-item {
+    flex: 1 1;
+    align-items: flex-start;
+
+    font-size: 18px;
+    font-weight: 400;
+    /* margin-top: 20px; */
+    white-space: nowrap;
+    color: var(--text-color);
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card-mobile-text {
+    display: none;
+}
+
+.wrapper-icon {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.admin-form-delete {
+    display: inline;
+}
+
+.btn-buy{
+    /*margin: 1.5rem auto 0 auto;
+    padding: 12px 20px; */
+    
+    background-color: rgb(226,0,73);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    align-self: center;
+    text-align: center;
+    border-radius: 25px;
+    height: 34px;
+    line-height: 34px;
+    display: block;
+    width: 250px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+    align-content: center;
+    margin-left: 28px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    white-space: nowrap;
+
+    /* padding: 12px 20px; */
+}
+
+.btn-buy:hover{
+    background-color: #9b9b9b;
+    /* color: #fff; */
+    transition: all 0.2s linear;
+}
+
+.btn-view{
+    width: 25px;
+    height: 30px;
+    appearance: none;
+    /* border-radius: 50%; */
+    border: 0;
+    background-color: transparent;
+    /* background-color: rgb(226,0,73); */
+    /* background-color: hsla(4, 0%, 0%, 1); */
+    background-image: url("images/noun-view-4644120.svg"); /* url("../images/noun-view-4644120.svg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    cursor: pointer;
+    padding: 0;
+    /* position: absolute;
+    top: 40%;
+    left: 0%; */
+    transition: background-color 200ms ease-out;
+    display: inline-block;
+}
+
+.cart-remove:hover {
+    background-image: url("../images/trash-can-10417-hover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.btn-edit{
+    width: 25px;
+    height: 30px;
+    appearance: none;
+    /* border-radius: 50%; */
+    border: 0;
+    background-color: transparent;
+    /* background-color: rgb(226,0,73); */
+    /* background-color: hsla(4, 0%, 0%, 1); */
+    background-image: url("images/noun-edit-1156173.svg"); /* url("../images/noun-view-4644120.svg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    cursor: pointer;
+    padding: 0;
+    /* position: absolute;
+    top: 40%;
+    left: 0%; */
+    transition: background-color 200ms ease-out;
+    display: inline-block;
+}
+
+.btn-delete{
+    width: 25px;
+    height: 30px;
+    appearance: none;
+    /* border-radius: 50%; */
+    border: 0;
+    background-color: transparent;
+    /* background-color: rgb(226,0,73); */
+    /* background-color: hsla(4, 0%, 0%, 1); */
+    background-image: url("images/noun-delete-1144257.svg"); /* url("../images/noun-view-4644120.svg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    cursor: pointer;
+    padding: 0;
+    /* position: absolute;
+    top: 40%;
+    left: 0%; */
+    transition: background-color 200ms ease-out;
+    display: inline-block;
+}
+
+/* На мобильном экране */
+@media (max-width: 780px) {
+    .accounts-head {
+        display: none;
+    }
+    .accounts-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .list {
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 0 4px 38px rgba(143, 39, 199, 0.05);
+        border-radius: 6px;
+        border-bottom: none;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .account-card {
+        width: 100%;
+        padding: 0;
+    }
+
+    .account-card-item {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-mobile-text {
+        display: inline;
+        color: #333;
+    }
+}
+
+/* ===== End Таблица Вадим ===== */
+
 .dash-content .activity .activity-data{
     display: flex;
     justify-content: space-between;
