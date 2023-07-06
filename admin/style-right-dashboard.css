@@ -9,9 +9,9 @@
 
 :root{
     /* ===== Colors ===== */
-    --primary-color: #0E4BF1;
+    --primary-color: #695CFE; /* #0E4BF1; */
     --panel-color: #FFF;
-    --text-color: #000;
+    --text-color: #707070; /* #000; */
     --black-light-color: #707070;
     --border-color: #e6e5e5;
     --toggle-color: #DDD;
@@ -354,7 +354,7 @@ body.dark .switch:before{
     /* border-radius: 50%; */
     border: 0;
     /* background-color: red; transparent; */
-    background-image: url(images/noun-shopping-bag-5309704.svg);    
+    background-image: url(images/noun-shopping-bag-5309704-dark-grey.svg);    
     background-size: auto, auto;   
 	background-repeat: no-repeat;
     background-position: center;
@@ -394,7 +394,7 @@ body.dark .boxes .box1 .box-icon:hover {
     /* border-radius: 50%; */
     border: 0;
     background-color: transparent;
-    background-image: url(images/noun-teddy-bear-3500508-black.svg);    
+    background-image: url(images/noun-teddy-bear-3500508.svg);    
     background-size: contain;   
 	background-repeat: no-repeat;
     background-position: center;
@@ -434,7 +434,7 @@ body.dark .boxes .box2 .box-icon:hover {
     /* border-radius: 50%; */
     border: 0;
     background-color: transparent;
-    background-image: url(images/noun-folder-1272002.svg);    
+    background-image: url(images/noun-folder-1272002-dark-grey.svg);    
     background-size: cover;   
 	background-repeat: no-repeat;
     background-position: center;	
@@ -500,6 +500,10 @@ body.dark .boxes .box3 .box-icon:hover {
     display: flex;
     justify-content: space-between;
     margin-bottom: 16px;
+
+    font-size: 20px;
+    font-weight: 550;
+    color: var(--text-color);
 }
 
 .accounts-head > :nth-child(n) {
@@ -539,6 +543,12 @@ body.dark .boxes .box3 .box-icon:hover {
     
 }
 
+body.dark .accounts-list .list,
+body.dark .accounts-list .list:hover {
+    background-color: var(--sidebar-color); /* var(--box1-color); */
+    transition: var(--tran-05);
+}
+
 .account-card-item {
     flex: 1 1;
     align-items: flex-start;
@@ -555,6 +565,9 @@ body.dark .boxes .box3 .box-icon:hover {
 
 .card-mobile-text {
     display: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
 }
 
 .wrapper-icon {
@@ -565,10 +578,31 @@ body.dark .boxes .box3 .box-icon:hover {
     gap: 15px;
     justify-content: space-around;
     margin-bottom: 0;
+    max-width: 150px;
+}
+
+.wrapper-icon .admin-action-ahref {
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 100%;
+    min-height: 27px;
+}
+
+.wrapper-icon .admin-action-ahref:hover {
+    background-color: var(--primary-color);
+    transition: var(--tran-03);
 }
 
 .admin-form-delete {
     display: inline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-buy{
@@ -606,18 +640,19 @@ body.dark .boxes .box3 .box-icon:hover {
 }
 
 .btn-view{
-    width: 23px;
-    height: 20px;
+    width: 30px;
+    height: 26px;
     appearance: none;
     /* border-radius: 50%; */
     border: 0;
     background-color: transparent;
     /* background-color: rgb(226,0,73); */
     /* background-color: hsla(4, 0%, 0%, 1); */
-    background-image: url("images/noun-view-4644120.svg"); /* url("../images/noun-view-4644120.svg"); */
+    background-image: url("images/noun-view-4373531.svg"); /* url("../images/noun-view-4644120.svg"); */
     background-repeat: no-repeat;
     background-position: center;
-    background-size:cover;
+    background-position-y: center;
+    background-size: contain;
     cursor: pointer;
     padding: 0;
     /* position: absolute;
@@ -627,16 +662,37 @@ body.dark .boxes .box3 .box-icon:hover {
     display: inline-block;
 }
 
-.cart-remove:hover {
+.cart-remove:hover {    
     background-image: url("../images/trash-can-10417-hover.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-position-y: center;
+    background-size: contain;
+}
+
+.wrapper-icon .admin-action-ahref:hover .btn-view {
+    width: 30px;
+    height: 23px;
+    background-image: url("images/noun-view-4373531-white.svg"); /* url("../images/noun-view-4644120.svg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;
+    background-size: contain;
+    transition: var(--tran-02);
+}
+
+body.dark .wrapper-icon .btn-view,
+body.dark .wrapper-icon .btn-view:hover {
+    background-image: url("images/noun-view-4373531-light-grey.svg"); /* url("../images/noun-view-4644120.svg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;
     background-size: contain;
 }
 
 .btn-edit{
-    width: 20px;
-    height: 20px;
+    width: 26px;
+    height: 25px;
     appearance: none;
     /* border-radius: 50%; */
     border: 0;
@@ -646,7 +702,8 @@ body.dark .boxes .box3 .box-icon:hover {
     background-image: url("images/noun-edit-1156173.svg"); /* url("../images/noun-view-4644120.svg"); */
     background-repeat: no-repeat;
     background-position: center;
-    background-size:cover;
+    background-position-y: center;
+    background-size: contain;
     cursor: pointer;
     padding: 0;
     /* position: absolute;
@@ -656,19 +713,40 @@ body.dark .boxes .box3 .box-icon:hover {
     display: inline-block;
 }
 
+.wrapper-icon .admin-action-ahref:hover .btn-edit {
+    width: 30px;
+    height: 23px;
+    background-image: url("images/noun-edit-1156173-white.svg"); /* url("../images/noun-view-4644120.svg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;
+    background-size: contain;
+    transition: var(--tran-02);
+}
+
+body.dark .wrapper-icon .btn-edit,
+body.dark .wrapper-icon .btn-edit:hover {
+    background-image: url("images/noun-edit-1156173-light-grey.svg"); /* url("../images/noun-view-4644120.svg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;
+    background-size: contain;
+}
+
 .btn-delete{
-    width: 20px;
-    height: 20px;
+    width: 26px;
+    height: 26px;
     appearance: none;
     /* border-radius: 50%; */
     border: 0;
     background-color: transparent;
     /* background-color: rgb(226,0,73); */
     /* background-color: hsla(4, 0%, 0%, 1); */
-    background-image: url("images/noun-delete-1144257.svg"); /* url("../images/noun-view-4644120.svg"); */
+    background-image: url("images/noun-delete-1234808.svg"); /* url("../images/noun-view-4644120.svg"); */
     background-repeat: no-repeat;
     background-position: center;
-    background-size:cover;
+    background-position-y: center;
+    background-size:contain;
     cursor: pointer;
     padding: 0;
     /* position: absolute;
@@ -676,6 +754,26 @@ body.dark .boxes .box3 .box-icon:hover {
     left: 0%; */
     transition: background-color 200ms ease-out;
     display: inline-block;
+}
+
+.wrapper-icon .admin-action-ahref:hover .btn-delete {
+    width: 30px;
+    height: 23px;
+    background-image: url("images/noun-delete-1234808-white.svg"); /* url("../images/noun-view-4644120.svg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;
+    background-size: contain;
+    transition: var(--tran-02);
+}
+
+body.dark .wrapper-icon .btn-delete,
+body.dark .wrapper-icon .btn-delete:hover {
+    background-image: url("images/noun-delete-1234808-light-grey.svg"); /* url("../images/noun-view-4644120.svg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;
+    background-size:contain;
 }
 
 /* На мобильном экране */
@@ -713,7 +811,9 @@ body.dark .boxes .box3 .box-icon:hover {
 
     .card-mobile-text {
         display: inline;
-        color: #333;
+        /* font-size: 18px;
+        font-weight: 500;
+        color: var(--text-color); */
     }
 }
 

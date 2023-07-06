@@ -204,17 +204,17 @@
                 <!-- Строка заголовков таблицы-->
                 <div class="accounts-list">
                     <div class="accounts-head">
-                        <p class="head-accounts">IBAN</p>
+                        <p class="head-accounts">Номер</p>
                         <p class="head-currency">Currency</p>
                         <p class="head-reserved">Reserved</p>
                         <p class="head-available">Available balance</p>
-                        <p class="head-actions">Actions</p>
+                        <p class="head-actions">Действие</p>
                     </div>
                     <div class="account-rows">
                     <!-- Строки таблицы-->
                     <div class="account-card list"> <!--  list -->
                         <div class="account-card-item">
-                            <p class="card-mobile-text">IBAN</p>
+                            <p class="card-mobile-text">Номер</p>
                             <p class="account">HJGHG7676767</p>
                         </div>
                         <div class="account-card-item">
@@ -230,13 +230,13 @@
                             <p class="account">7675.89</p>
                         </div>
                         <div class="account-card-item">
-                            <p class="card-mobile-text">Actions</p>                            
+                            <p class="card-mobile-text">Действие</p>                            
                             <!-- <p class="account">HJGHG7</p> -->
                             <div class="account">
                                 <div class="wrapper-icon">
-                                    <a href="#"><div class="btn-view"></div></a>
-                                    <a href="#"><div class="btn-edit"></div></a>
-                                    <div class="main-cart-remove">
+                                    <a href="#" class="admin-action-ahref"><div class="btn-view"></div></a>
+                                    <a href="#" class="admin-action-ahref"><div class="btn-edit"></div></a>
+                                    <div class="main-cart-remove admin-action-ahref">
                                         <!--Remove cart-->
                                         <form action="" method="post" class="admin-form-delete">
                                             <button class="btn-delete" data-id="${id}"></button>
@@ -264,14 +264,26 @@
                             <p class="account">7675.89</p>
                         </div>
                         <div class="account-card-item">
-                            <p class="card-mobile-text">Actions</p>
-                            <p class="account">HJGHG7</p>
+                            <p class="card-mobile-text">Действие</p>                            
+                            <!-- <p class="account">HJGHG7</p> -->
+                            <div class="account">
+                                <div class="wrapper-icon">
+                                    <a href="#" class="admin-action-ahref"><div class="btn-view"></div></a>
+                                    <a href="#" class="admin-action-ahref"><div class="btn-edit"></div></a>
+                                    <div class="main-cart-remove admin-action-ahref">
+                                        <!--Remove cart-->
+                                        <form action="" method="post" class="admin-form-delete">
+                                            <button class="btn-delete" data-id="${id}"></button>
+                                        </form>                                
+                                    </div>     
+                                </div>                               
+                            </div>
                         </div>
                     </div>
                     </div>
                 </div>
 
-                <div class="activity-data">
+                <!-- <div class="activity-data">
                     <div class="data names">
                         <span class="data-title">Name</span>
                         <span class="data-list">Prem Shahi</span>
@@ -297,7 +309,7 @@
                         <span class="data-list">Liked</span>
                         <span class="data-list">Liked</span>                                              
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
