@@ -64,10 +64,10 @@ body.dark{
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
-    z-index: 100;  
+    z-index: 100;     
 }
 .sidebar.close{
-    width: 88px;
+    width: 88px;    
 }
 
 /* ===== Reusable code - Here ===== */
@@ -544,7 +544,7 @@ body.dark .mode .icon .icon-sun{
 }
 
 .sidebar .text{
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 500;
     white-space: nowrap;
     opacity: 1;
