@@ -1,0 +1,300 @@
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-right-dashboard.css">
+    <link rel="stylesheet" href="style-right-dashboard-category.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Dashboard Sidebar Menu</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Codinglab</span>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <!-- <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li> -->
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <!-- <i class='bx bx-home-alt icon' ></i> -->
+							<span class='icon'><div class='icon-dashboard'></div></span>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <!-- <i class='bx bx-bar-chart-alt-2 icon' ></i> -->
+							<span class='icon'><div class='icon-order'></div></span>
+                            <span class="text nav-text">Заказы</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <!-- <i class='bx bx-bell icon'></i> -->
+							<span class='icon'><div class='icon-product'></div></span>
+                            <span class="text nav-text">Товары</span>
+                        </a>
+                    </li>
+					
+					<li class="nav-link">
+                        <a href="#">
+                            <!-- <i class='bx bx-bell icon'></i> -->
+							<span class='icon'><div class='icon-collection'></div></span>
+                            <span class="text nav-text">Коллекции</span>
+                        </a>
+                    </li>
+					
+					<li class="nav-link">
+                        <a href="#">
+                            <!-- <i class='bx bx-bell icon'></i> -->
+							<span class='icon'><div class='icon-category'></div></span>
+                            <span class="text nav-text">Категории</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <!-- <i class='bx bx-pie-chart-alt icon' ></i> -->
+							<span class='icon'><div class='icon-user'></div></span>
+                            <span class="text nav-text">Пользователи</span>
+                        </a>
+                    </li>
+
+                   <!--  <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li> 
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li> -->
+					
+					<li class="nav-link">
+                        <a href="#">
+                            <!-- <i class='bx bx-pie-chart-alt icon' ></i> -->
+							<span class='icon'><div class='icon-subscribe'></div></span>
+                            <span class="text nav-text">Рассылки</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <!-- <i class='bx bx-log-out icon' ></i> -->
+						<span class='icon'><div class='icon-logout'></div></span>
+                        <span class="text nav-text">Выйти</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <!-- <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i> -->
+						<span class='icon'><div class='icon-moon'></div></span>
+						<span class='icon'><div class='icon-sun'></div></span>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="dashboard">
+        <!-- <div class="text">Dashboard Sidebar</div> -->
+
+        <div class="top">
+            <!-- <i class="uil uil-bars sidebar-toggle"></i> -->
+            <div></div>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            
+            <img src="images/profile.jpg" alt="">
+        </div>
+
+        <div class="dash-content">
+            <div class="activity">
+                <div class="title">
+                    <!-- <i class="uil uil-clock-three"></i> -->
+                    <div class="title-left">
+                        <div class="title-rectangle-icon">
+                            <div class="title-category-icon"></div>
+                        </div>
+                        <span class="text">Категории</span>
+                    </div>    
+                    <a href="#" class="admin-add-button">
+                        <div class="title-add-icon"></div>
+                        <span>Добавить</span>
+                    </a>    
+                </div>
+
+                <!-- Таблица с данными Вадим-->
+                <!-- Строка заголовков таблицы-->
+                <div class="accounts-list">
+                    <div class="accounts-head">
+                        <p class="head-category-id">Номер</p>
+                        <p class="head-category-title">Название</p>
+                        <p class="head-category-code">Код</p>
+                        <p class="head-category-image">Изображение</p>
+                        <p class="head-actions">Действие</p>
+                    </div>
+                    <div class="account-rows">
+                    <!-- Строки таблицы-->
+                    <div class="account-card list"> <!--  list -->
+                        <div class="account-card-item category-id-column">
+                            <p class="card-mobile-text">Номер</p>
+                            <p class="account">1</p>
+                        </div>
+                        <div class="account-card-item">
+                            <p class="card-mobile-text">Название</p>
+                            <p class="account">Мягкие игрушки</p>
+                        </div>
+                        <div class="account-card-item">
+                            <p class="card-mobile-text">Код</p>
+                            <p class="account">soft_toys</p>
+                        </div>
+                        <div class="account-card-item">
+                            <p class="card-mobile-text">Изображение</p>
+                            <!-- <p class="account">7675.89</p> -->
+                            <div class="account admin-table-img-container">
+                                <img class="admin-table-img" src="images/jolly_maeh_collection_image.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="account-card-item">
+                            <p class="card-mobile-text">Действие</p>                            
+                            <!-- <p class="account">HJGHG7</p> -->
+                            <div class="account">
+                                <div class="wrapper-icon">
+                                    <a href="#" class="admin-action-ahref"><div class="btn-view"></div></a>
+                                    <a href="#" class="admin-action-ahref"><div class="btn-edit"></div></a>
+                                    <div class="main-cart-remove admin-action-ahref">
+                                        <!--Remove cart-->
+                                        <form action="" method="post" class="admin-form-delete">
+                                            <button class="btn-delete" data-id="${id}"></button>
+                                        </form>                                
+                                    </div>     
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-card list"> <!--  list -->
+                        <div class="account-card-item category-id-column">
+                            <p class="card-mobile-text">Номер</p>
+                            <p class="account">3</p>
+                        </div>
+                        <div class="account-card-item">
+                            <p class="card-mobile-text">Название</p>
+                            <p class="account">Магниты MagNICI</p>
+                        </div>
+                        <div class="account-card-item">
+                            <p class="card-mobile-text">Код</p>
+                            <p class="account">magnici</p>
+                        </div>
+                        <div class="account-card-item">
+                            <p class="card-mobile-text">Изображение</p>
+                            <!-- <p class="account">7675.89</p> -->
+                            <div class="account admin-table-img-container">
+                                <img class="admin-table-img" src="images/jolly_maeh_collection_image.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="account-card-item">
+                            <p class="card-mobile-text">Действие</p>                            
+                            <!-- <p class="account">HJGHG7</p> -->
+                            <div class="account">
+                                <div class="wrapper-icon">
+                                    <a href="#" class="admin-action-ahref"><div class="btn-view"></div></a>
+                                    <a href="#" class="admin-action-ahref"><div class="btn-edit"></div></a>
+                                    <div class="main-cart-remove admin-action-ahref">
+                                        <!--Remove cart-->
+                                        <form action="" method="post" class="admin-form-delete">
+                                            <button class="btn-delete" data-id="${id}"></button>
+                                        </form>                                
+                                    </div>     
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- <div class="activity-data">
+                    <div class="data names">
+                        <span class="data-title">Name</span>
+                        <span class="data-list">Prem Shahi</span>
+                        <span class="data-list">Deepa Chand</span>                                                
+                    </div>
+                    <div class="data email">
+                        <span class="data-title">Email</span>
+                        <span class="data-list">premshahi@gmail.com</span>
+                        <span class="data-list">deepachand@gmail.com</span>                                                
+                    </div>
+                    <div class="data joined">
+                        <span class="data-title">Joined</span>
+                        <span class="data-list">2022-02-12</span>
+                        <span class="data-list">2022-02-12</span>                                                
+                    </div>
+                    <div class="data type">
+                        <span class="data-title">Type</span>
+                        <span class="data-list">New</span>
+                        <span class="data-list">Member</span>                                        
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">Status</span>
+                        <span class="data-list">Liked</span>
+                        <span class="data-list">Liked</span>                                              
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
