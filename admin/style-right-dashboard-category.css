@@ -392,7 +392,7 @@ body.dark .accounts-list .list:hover {
     .dash-content .boxes .box{
         width: calc(100% / 2 - 15px);
         margin-top: 15px;
-    }
+    }   
 }
 
 @media (max-width: 780px) {
@@ -413,11 +413,21 @@ body.dark .accounts-list .list:hover {
     .dash-content .boxes .box{
         gap: 0px 5%;
     }
+
+    .sidebar{
+        width: 88px; 
+        max-width: 88px;    
+    }
 }
 
 @media (max-width: 650px) {
     .dash-content .boxes .box{
         width: 100% ;
+    }
+
+    .sidebar{
+        width: 88px; 
+        max-width: 88px;    
     }
 }
 
@@ -430,11 +440,21 @@ body.dark .accounts-list .list:hover {
         gap: 20px 0px;
     }
 
+    .sidebar{
+        width: 88px; 
+        max-width: 88px;    
+    }
+
 }
 
 @media (max-width: 560px) {
     .dash-content .boxes .box{
         width: 100% ;
+    }
+
+    .sidebar{
+        width: 88px; 
+        max-width: 88px;    
     }
 }
 @media (max-width: 400px) {
@@ -475,5 +495,10 @@ body.dark .accounts-list .list:hover {
     nav.close ~ .dashboard .top{
         left: 0;
         width: 100%;
+    }
+
+    .sidebar{
+        width: 88px; 
+        max-width: 88px;    
     }
 }

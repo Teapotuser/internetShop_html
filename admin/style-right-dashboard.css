@@ -21,6 +21,7 @@
     --box2-color: #FFE6AC;
     --box3-color: #E7D1FC;
     --title-icon-color: #fff;
+    --input-color: #FFF; /* my variable */
     
     /* ====== Transition ====== */
     --tran-05: all 0.5s ease;
@@ -44,6 +45,7 @@ body.dark{
     --box2-color: #3A3B3C;
     --box3-color: #3A3B3C;
     --title-icon-color: #CCC;
+    --input-color: #3a3b3c; /* my variable from --primary-color-light: */
 }
 /* === Custom Scroll Bar CSS === */
 ::-webkit-scrollbar {
@@ -296,6 +298,22 @@ body.dark .switch:before{
     align-items: center;
     margin: 60px 0 30px 0;
 }
+
+.dash-content .title.title-with-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 0 30px 0;
+}
+
+.dash-content .title .title-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
 .dash-content .title i{
     position: relative;
     height: 35px;
@@ -388,6 +406,44 @@ body.dark .title .title-rectangle-icon .recent-icon:hover {
     min-width: 35px;
     transition: var(--tran-05);
 }
+
+/* Icons для Add, Edit форм */
+.dash-content .title .title-rectangle-icon .title-add-icon {
+    background-image: url(images/noun-add-1886814-white.svg);    
+    background-size: contain;   
+	background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;	    
+    height: 25px;
+    width: 25px;
+    /* max-height: 10px; */
+    /* max-width: ; */
+    min-width: 25px;
+    /* cursor: pointer; */
+    padding: 0;
+    margin: auto;
+    /* position: absolute;
+    top: 40%;
+    left: 0%; */
+    transition: background-color 200ms ease-out;
+}
+
+body.dark .title .title-rectangle-icon .title-add-icon,
+body.dark .title .title-rectangle-icon .title-add-icon:hover {
+    background-image: url(images/noun-add-1886814-light-grey.svg);    
+    /* background-size: auto, auto;    */
+	background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;
+    height: 25px;
+    width: 25px;
+    /* max-height: 10px; */
+    /* max-width: ; */
+    min-width: 25px;
+    transition: var(--tran-05);
+}
+
+/* End of Icons для Add, Edit форм */
 
 .dash-content .title .text{
     font-size: 26px;
@@ -869,6 +925,48 @@ body.dark .wrapper-icon .btn-delete:hover {
     background-size:contain;
 }
 
+/* Кнопка Назад */
+.admin-back-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 12px;
+    text-decoration: none;
+    font-size: 16px; 
+    font-weight: 500;   
+    background-color: var(--primary-color);
+    color: var(--title-icon-color);
+    height: 35px;
+    width: 125px;
+    min-width: 122px;    
+    border-radius: 6px;    
+    transition: var(--tran-05);
+}
+
+.admin-back-button .title-back-icon {
+    background-image: url(images/noun-back-4821466-white.svg);    
+    /* background-size: auto, auto;    */
+	background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;
+    height: 23px;
+    width: 23px;
+    /* max-height: 10px; */
+    /* max-width: ; */
+    min-width: 23px;
+    transition: var(--tran-05);
+}
+
+body.dark .admin-back-button .title-back-icon {
+    background-image: url(images/noun-back-4821466-light-grey.svg);    
+    /* background-size: auto, auto;    */
+	background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;
+    transition: var(--tran-05);
+}
+
 /* На мобильном экране */
 @media (max-width: 780px) {
     .accounts-head {
@@ -1001,6 +1099,13 @@ body.dark .wrapper-icon .btn-delete:hover {
     /* .dash-content .boxes .box{
         width: 100% ;
     } */
+
+    .sidebar{
+        width: 88px; 
+        max-width: 88px;    
+    }
+
+    
 }
 
 @media (max-width: 729px) {
@@ -1010,17 +1115,32 @@ body.dark .wrapper-icon .btn-delete:hover {
     .dash-content .boxes .box{
         gap: 0px 5%;
     }
+
+    .sidebar{
+        width: 88px; 
+        max-width: 88px;    
+    }
 }
 
 @media (max-width: 650px) {
     .dash-content .boxes .box{
         width: 100% ;
     }
+
+    .sidebar{
+        width: 88px; 
+        max-width: 88px;    
+    }
 }
 
 @media (max-width: 560px) {
     .dash-content .boxes .box{
         width: 100% ;
+    }
+
+    .sidebar{
+        width: 88px; 
+        max-width: 88px;    
     }
 }
 @media (max-width: 400px) {
@@ -1061,5 +1181,10 @@ body.dark .wrapper-icon .btn-delete:hover {
     nav.close ~ .dashboard .top{
         left: 0;
         width: 100%;
+    }
+
+    .sidebar{
+        width: 88px; 
+        max-width: 88px;    
     }
 }

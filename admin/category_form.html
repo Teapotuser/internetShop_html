@@ -1,0 +1,260 @@
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-right-dashboard.css">
+    <link rel="stylesheet" href="admin-form.css" type="text/css">
+    <!-- <link rel="stylesheet" href="file-upload1.css" type="text/css"> -->
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Dashboard Sidebar Menu</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Codinglab</span>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <!-- <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li> -->
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <!-- <i class='bx bx-home-alt icon' ></i> -->
+							<span class='icon'><div class='icon-dashboard'></div></span>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <!-- <i class='bx bx-bar-chart-alt-2 icon' ></i> -->
+							<span class='icon'><div class='icon-order'></div></span>
+                            <span class="text nav-text">Заказы</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <!-- <i class='bx bx-bell icon'></i> -->
+							<span class='icon'><div class='icon-product'></div></span>
+                            <span class="text nav-text">Товары</span>
+                        </a>
+                    </li>
+					
+					<li class="nav-link">
+                        <a href="#">
+                            <!-- <i class='bx bx-bell icon'></i> -->
+							<span class='icon'><div class='icon-collection'></div></span>
+                            <span class="text nav-text">Коллекции</span>
+                        </a>
+                    </li>
+					
+					<li class="nav-link">
+                        <a href="#">
+                            <!-- <i class='bx bx-bell icon'></i> -->
+							<span class='icon'><div class='icon-category'></div></span>
+                            <span class="text nav-text">Категории</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <!-- <i class='bx bx-pie-chart-alt icon' ></i> -->
+							<span class='icon'><div class='icon-user'></div></span>
+                            <span class="text nav-text">Пользователи</span>
+                        </a>
+                    </li>
+
+                   <!--  <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li> 
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li> -->
+					
+					<li class="nav-link">
+                        <a href="#">
+                            <!-- <i class='bx bx-pie-chart-alt icon' ></i> -->
+							<span class='icon'><div class='icon-subscribe'></div></span>
+                            <span class="text nav-text">Рассылки</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <!-- <i class='bx bx-log-out icon' ></i> -->
+						<span class='icon'><div class='icon-logout'></div></span>
+                        <span class="text nav-text">Выйти</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <!-- <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i> -->
+						<span class='icon'><div class='icon-moon'></div></span>
+						<span class='icon'><div class='icon-sun'></div></span>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="dashboard">
+        <!-- <div class="text">Dashboard Sidebar</div> -->
+
+        <div class="top">
+            <!-- <i class="uil uil-bars sidebar-toggle"></i> -->
+            <div></div>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            
+            <img src="images/profile.jpg" alt="">
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title title-with-button">
+                    <!-- <i class="uil uil-tachometer-fast-alt"></i> -->
+                    <div class="title-left">
+                        <div class="title-rectangle-icon">
+                            <div class="title-add-icon"></div>
+                        </div>
+                        <span class="text">Добавление новой категории</span>  
+                    </div> 
+                    <a href="#" class="admin-back-button">
+                        <div class="title-back-icon"></div>
+                        <span>Назад</span>
+                    </a>                  
+                </div>                                 
+            </div>
+
+            <!-- Форма добавления Категории -->
+            <div class="form-wrapper"> 
+                <!--Форма логина--> 
+                <form method="POST" action="{{ route('login') }}" class="login-form-decor">
+                    <!-- @csrf -->
+                    <div class="form-inner">
+                        <label for="code">Код *</label>
+                        <input type="text" name="code" minLength="1" maxLength="150" required autocomplete="off">
+                        <label for="name">Название *</label>
+                        <input type="text" name="name" minLength="1" maxLength="150" required autocomplete="off">
+                        <label for="description">Описание</label>
+                        <br>
+                        <textarea name="description" cols="40" rows="3" maxLength="1000" autocomplete="off"></textarea>
+                        <!-- <label for="pcture">Изображение:</label>
+                        <br><br>
+                        <input type="file" accept="image/*" name="picture">
+                        <br> -->
+                        <!-- <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" required autocomplete="name" autofocus placeholder="Имя *"> value="{{ old('name') }}" -->
+                        <!-- <br> -->
+                        <!-- <img src="http://placehold.it/180" id="blah" alt="Img"><br><br>
+                        <input type="file" id="inputFile" onchange="readUrl(this)">
+                        <button type="button" onclick="removeImg()">Close</button> -->
+                        <!-- <br> -->
+                        <p class="label">Изображение</p>
+                        <div class="file-upload-container">
+                            <figure class="file-upload-preview-image-container">
+                                <img id="chosen-image" src="images/Untitled.png">
+                                <figcaption id="file-name"></figcaption>
+                            </figure>
+                    
+                            <input type="file" id="upload-button" accept="image/*" name="picture">
+                            <label for="upload-button" class="upload-file-label">
+                                <!-- <i class="fas fa-upload"></i> &nbsp; Choose A Photo -->
+                                <div class="file-upload-icon"></div>
+                                <span>Загрузить файл</span>
+                            </label>
+                            <button type="button" id="clear-file-button" class="hidden"></button>                            
+                        </div>
+                        <br>
+                        <div class="form-inner-checkbox">
+                            <!-- <input type="checkbox" id="create-account" name="create-account">
+                            <label for="create-account" class="label-checkbox">Зарегистрировать аккаунт</label> -->
+                        
+                            <input type="checkbox" id="create-account" name="create-account">
+                            <label for="create-account">
+                                <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="svg-checkbox">
+                                    <path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/>
+                                </svg>
+                                Активна
+                            </label>                                       
+                        </div>  
+
+                        <div class="center-button">
+                            <div class="">                                
+                                <button type="submit" class="admin-save-button">
+                                    <div class="admin-save-icon"></div>
+                                    <span>Сохранить</span>                                    
+                                </button> 
+                                <div></div>                           
+                            </div>                            
+                        </div>
+                    </div>
+                </form>                 
+            </div>            
+
+            <!-- <div class="activity">
+                <div class="title"> -->
+                    <!-- <i class="uil uil-clock-three"></i> -->
+                    <!-- <div class="title-rectangle-icon">
+                        <div class="recent-icon"></div>
+                    </div>
+                    <span class="text">Последние заказы</span>
+                </div>                
+            </div> -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <!-- <script src="file-upload.js"></script> -->
+    <script src="file-upload1.js"></script>
+</body>
+</html>
