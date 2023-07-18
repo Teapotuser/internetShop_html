@@ -79,15 +79,18 @@ body.dark .accounts-list .list:hover {
    /* color: #333; */
    font-size: 17px;
    font-weight: 500;
-   line-height: 40px;
+   /* line-height: 40px; */
     /* border-width: 0; */
    /* border: 1px solid #e1e1e1; */
    border: 1px solid var(--border-color);
    border-radius: 10px;
    /* font-family: 'Roboto', sans-serif; */
+   transition: var(--tran-05);
  }
+
  .form-inner input[type="text"], .form-inner input[type="email"], .form-inner input[type="number"], .form-inner input[type="password"] {
    height: 50px;
+   line-height: 40px;
  }
 
  .form-inner input[type="number"] {
@@ -101,6 +104,7 @@ body.dark .accounts-list .list:hover {
     border-width: 1px;
     border-color: var(--primary-color); /* #695CFE; */
     /* outline-offset: 0; */
+    transition: var(--tran-05);
 }
 
 body.dark .form-inner input[type="text"], body.dark .form-inner input[type="email"], body.dark .form-inner input[type="number"], body.dark .form-inner input[type="password"], body.dark .form-inner textarea 
@@ -108,7 +112,7 @@ body.dark .form-inner input[type="text"], body.dark .form-inner input[type="emai
 .form-inner textarea:active, .form-inner textarea:hover, .form-inner textarea:focus  */{
    outline: none;
    border: none;
-   background-color: var(input-color); /* background-color: var(--primary-color-light); */
+   background-color: var(--input-color); /* background-color: var(--primary-color-light); */
    color: var(--text-color);
    /* border-radius: 6px; */
    font-size: 17px;
@@ -130,7 +134,7 @@ body.dark .form-inner input[type="text"], body.dark .form-inner input[type="emai
 
 /*===== Checkbox стили =====*/
 .form-inner input[type="checkbox"] + label {
-   padding: 0 0 0 12px;
+   /* padding: 0 0 0 12px; */
    /* position: relative; */
 
    cursor: pointer;
@@ -152,18 +156,41 @@ input[type="checkbox"]#create-account {
  }
 
  input[type="checkbox"]#create-account:checked + label path {
-   fill: #e20049;
+   /* fill: #e20049; */
+   fill: var(--checkbox-color);
+   transition: var(--tran-05);
  }
 
  /* Квадрат checkbox-а */
 .svg-checkbox {
-   border: 1px solid #333;
+   /* border: 1px solid #333; */
+   border: 1px solid var(--border-color);
    color: #333;
-   background-color: #fff;
+   /* background-color: #fff; */
+   background-color: var(--input-color);
    padding: 2px;
-   width: 18px;
+   width: 25px;
+   height: 25px;
    border-radius: 3px;
    margin-right: 12px;
+   transition: var(--tran-05);
+}
+
+/* input[type="checkbox"]#create-account:checked + label .svg-checkbox, */
+input[type="checkbox"]#create-account:focus + label .svg-checkbox,
+input[type="checkbox"]#create-account:hover + label .svg-checkbox
+  {
+   outline: 1px;
+   outline-color: var(--primary-color); /* #695CFE; */
+   border-width: 1px;
+   border-color: var(--primary-color); /* #695CFE; */
+   transition: var(--tran-05);
+}
+
+body.dark .form-inner .svg-checkbox {
+   outline: none;
+   border: none;
+   transition: var(--tran-05);
 }
    
 .svg-checkbox  path {
@@ -219,8 +246,11 @@ input[type="checkbox"]#create-account {
     font-size: 14px;
  }
  .form-inner textarea {
-    resize: none;
+    resize: vertical;
+    line-height: 25px;
+    padding: 10px 20px;
  }
+
  .form-inner h3 {
     margin-top: 0;
     font-family: 'Roboto', sans-serif;
@@ -523,7 +553,8 @@ input[type=radio] + label {
 figcaption {
    margin: 20px 0 0 0;
    text-align: center;
-   color: #2a292a;
+   /* color: #2a292a; */
+   color: var(--text-color-darker);
    max-width: 350px;
    white-space: break-spaces;
    text-overflow: ellipsis;
@@ -618,8 +649,17 @@ button#clear-file-button {
    cursor: pointer;
 }
 
-button#clear-file-button.hidden {
+button#clear-file-button.hidden, body.dark button#clear-file-button.hidden {
    display: none;
+}
+
+body.dark button#clear-file-button {
+   background-image: url(images/noun-cancel-1890830-light-grey.svg);    
+   /* background-size: auto, auto;    */
+   background-repeat: no-repeat;
+   background-position: center;
+   background-position-y: center;
+   transition: var(--tran-05);
 }
 
 /* Кнопка Сохранить */
