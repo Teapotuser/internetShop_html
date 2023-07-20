@@ -1,11 +1,11 @@
 /* ===== Google Font Import - Poppins ===== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
+} */
 
 :root{
     /* ===== Colors ===== */
@@ -23,6 +23,7 @@
     --title-icon-color: #fff;
     --input-color: #FFF; /* my variable for form input */
     --checkbox-color: #695CFE; /* my variable for checkbox input */
+    --upload-button-color: #695CFE; /* my variable for file upload button */
     
     /* ====== Transition ====== */
     --tran-05: all 0.5s ease;
@@ -48,6 +49,7 @@ body.dark{
     --title-icon-color: #CCC;
     --input-color: #3a3b3c; /* my variable for form input, from --primary-color-light: */
     --checkbox-color: #CCC; /* my variable for checkbox input */
+    --upload-button-color: #242526; /* my variable for file upload button */
 }
 /* === Custom Scroll Bar CSS === */
 ::-webkit-scrollbar {
