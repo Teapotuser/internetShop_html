@@ -727,6 +727,15 @@ body.dark .admin-save-button .admin-save-icon {
 }
 }
 
+@media (min-width: 901px) and (max-width: 1000px) {
+   .login-form-decor {   
+      max-width: 85%;
+      width: 85%;   
+      margin-left: 5%;
+      margin-right: 5%;
+   }
+   }
+
 @media (max-width: 900px) {
 .dash-content .title.title-with-button {
    display: flex;
@@ -785,8 +794,6 @@ body.dark .admin-save-button .admin-save-icon {
       margin-left: 0px;
       margin-right: 0px;
 }
-
-
 }
 
 
