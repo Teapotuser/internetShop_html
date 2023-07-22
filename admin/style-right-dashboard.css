@@ -457,296 +457,7 @@ body.dark .title .title-rectangle-icon .title-add-icon:hover {
 }
 
 /* Здесь были boxes */
-
-/* ===== Таблица Вадим ===== */
-.accounts-list {
-    width: 100%;
-    
-}
-
-.accounts-head {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 16px;
-
-    font-size: 20px;
-    font-weight: 550;
-    color: var(--text-color-darker);
-}
-
-.accounts-head > :nth-child(n) {
-    flex: 1;
-    text-align: center;
-}
-
-.account-rows {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    white-space: nowrap;
-    gap: 10px 0px;
-}
-
-.account-card {
-    padding: 20px 30px 20px 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 38px rgba(143, 39, 199, 0.05);
-    background-color: #fff;
-    width: 300px;
-}
-
-.list {
-    width: 100%;
-    padding: 16px 0 16px 0; /* 20px 0 20px 0; */
-    display: flex;
-    align-items: center;
-    box-shadow: none;
-    background-color: transparent;
-    border-radius: 0;
-    /* border-bottom:  1px solid #333; */
-    /* color: rgb(226,0,73); */
-
-    background-color: #fff;
-    border-radius: 8px;
-    
-}
-
-.accounts-list .list:hover {
-    background-color: var(--primary-color-trasparent); /* var(--box1-color); */
-    transition: var(--tran-05);
-}
-
-body.dark .accounts-list .list,
-body.dark .accounts-list .list:hover {
-    background-color: var(--sidebar-color); /* var(--box1-color); */
-    transition: var(--tran-05);
-}
-
-.account-card-item {
-    flex: 1 1;
-    align-items: flex-start;
-
-    font-size: 18px;
-    font-weight: 400;
-    /* margin-top: 20px; */
-    white-space: nowrap;
-    color: var(--text-color-darker);
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.card-mobile-text {
-    display: none;
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--text-color-darker);
-}
-
-.wrapper-icon {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 15px;
-    justify-content: space-around;
-    margin-bottom: 0;
-    max-width: 150px;
-}
-
-.wrapper-icon .admin-action-ahref {
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 100%;
-    min-height: 27px;
-}
-
-.wrapper-icon .admin-action-ahref:hover {
-    background-color: var(--primary-color);
-    transition: var(--tran-03);
-}
-
-.admin-form-delete {
-    display: inline;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn-buy{
-    /*margin: 1.5rem auto 0 auto;
-    padding: 12px 20px; */
-    
-    background-color: rgb(226,0,73);
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    align-self: center;
-    text-align: center;
-    border-radius: 25px;
-    height: 34px;
-    line-height: 34px;
-    display: block;
-    width: 250px;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    letter-spacing: 2px;
-    align-content: center;
-    margin-left: 28px;
-    margin-bottom: 10px;
-    margin-top: 8px;
-    white-space: nowrap;
-
-    /* padding: 12px 20px; */
-}
-
-.btn-buy:hover{
-    background-color: #9b9b9b;
-    /* color: #fff; */
-    transition: all 0.2s linear;
-}
-
-.btn-view{
-    width: 30px;
-    height: 26px;
-    appearance: none;
-    /* border-radius: 50%; */
-    border: 0;
-    background-color: transparent;
-    /* background-color: rgb(226,0,73); */
-    /* background-color: hsla(4, 0%, 0%, 1); */
-    background-image: url("images/noun-view-4373531-grey444746.svg"); /* url("../images/noun-view-4644120.svg"); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: center;
-    background-size: contain;
-    cursor: pointer;
-    padding: 0;
-    /* position: absolute;
-    top: 40%;
-    left: 0%; */
-    transition: background-color 200ms ease-out;
-    display: inline-block;
-}
-
-.cart-remove:hover {    
-    background-image: url("../images/trash-can-10417-hover.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: center;
-    background-size: contain;
-}
-
-.wrapper-icon .admin-action-ahref:hover .btn-view {
-    width: 30px;
-    height: 23px;
-    background-image: url("images/noun-view-4373531-white.svg"); /* url("../images/noun-view-4644120.svg"); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: center;
-    background-size: contain;
-    transition: var(--tran-02);
-}
-
-body.dark .wrapper-icon .btn-view,
-body.dark .wrapper-icon .btn-view:hover {
-    background-image: url("images/noun-view-4373531-light-grey.svg"); /* url("../images/noun-view-4644120.svg"); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: center;
-    background-size: contain;
-}
-
-.btn-edit{
-    width: 26px;
-    height: 25px;
-    appearance: none;
-    /* border-radius: 50%; */
-    border: 0;
-    background-color: transparent;
-    /* background-color: rgb(226,0,73); */
-    /* background-color: hsla(4, 0%, 0%, 1); */
-    background-image: url("images/noun-edit-1156173-grey444746.svg"); /* url("../images/noun-view-4644120.svg"); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: center;
-    background-size: contain;
-    cursor: pointer;
-    padding: 0;
-    /* position: absolute;
-    top: 40%;
-    left: 0%; */
-    transition: background-color 200ms ease-out;
-    display: inline-block;
-}
-
-.wrapper-icon .admin-action-ahref:hover .btn-edit {
-    width: 30px;
-    height: 23px;
-    background-image: url("images/noun-edit-1156173-white.svg"); /* url("../images/noun-view-4644120.svg"); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: center;
-    background-size: contain;
-    transition: var(--tran-02);
-}
-
-body.dark .wrapper-icon .btn-edit,
-body.dark .wrapper-icon .btn-edit:hover {
-    background-image: url("images/noun-edit-1156173-light-grey.svg"); /* url("../images/noun-view-4644120.svg"); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: center;
-    background-size: contain;
-}
-
-.btn-delete{
-    width: 26px;
-    height: 26px;
-    appearance: none;
-    /* border-radius: 50%; */
-    border: 0;
-    background-color: transparent;
-    /* background-color: rgb(226,0,73); */
-    /* background-color: hsla(4, 0%, 0%, 1); */
-    background-image: url("images/noun-delete-1234808-grey444746.svg"); /* url("../images/noun-view-4644120.svg"); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: center;
-    background-size:contain;
-    cursor: pointer;
-    padding: 0;
-    /* position: absolute;
-    top: 40%;
-    left: 0%; */
-    transition: background-color 200ms ease-out;
-    display: inline-block;
-}
-
-.wrapper-icon .admin-action-ahref:hover .btn-delete {
-    width: 30px;
-    height: 23px;
-    background-image: url("images/noun-delete-1234808-white.svg"); /* url("../images/noun-view-4644120.svg"); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: center;
-    background-size: contain;
-    transition: var(--tran-02);
-}
-
-body.dark .wrapper-icon .btn-delete,
-body.dark .wrapper-icon .btn-delete:hover {
-    background-image: url("images/noun-delete-1234808-light-grey.svg"); /* url("../images/noun-view-4644120.svg"); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: center;
-    background-size:contain;
-}
+/* ===== Здесь была Таблица Вадим ===== */
 
 /* Кнопка Назад */
 .admin-back-button {
@@ -790,54 +501,12 @@ body.dark .admin-back-button .title-back-icon {
     transition: var(--tran-05);
 }
 
-/* На мобильном экране */
-@media (max-width: 780px) {
-    .accounts-head {
-        display: none;
-    }
-    .accounts-list {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .list {
-        flex-direction: column;
-        background-color: #fff;
-        box-shadow: 0 4px 38px rgba(143, 39, 199, 0.05);
-        border-radius: 6px;
-        border-bottom: none;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .account-card {
-        width: 100%;
-        padding: 0;
-    }
-
-    .account-card-item {
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .card-mobile-text {
-        display: inline;
-        /* font-size: 18px;
-        font-weight: 500;
-        color: var(--text-color); */
-    }
-}
-
-/* ===== End Таблица Вадим ===== */
 
 .dash-content .activity {
     margin-bottom: 30px;
 }
 
-.dash-content .activity .activity-data{
+/* .dash-content .activity .activity-data{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -862,7 +531,7 @@ body.dark .admin-back-button .title-back-icon {
     margin-top: 20px;
     white-space: nowrap;
     color: var(--text-color);
-}
+} */
 
 @media (max-width: 1000px) {
     nav{
@@ -905,12 +574,7 @@ body.dark .admin-back-button .title-back-icon {
     } */
     .activity .activity-data{
         overflow-X: scroll;
-    }
-
-    .dash-content .boxes .box{
-        width: calc(100% / 2 - 15px);
-        margin-top: 15px;
-    }
+    }   
 }
 
 /* Отключение открытия left sidebar */
@@ -924,37 +588,7 @@ body.dark .admin-back-button .title-back-icon {
     }
 }
 
-@media (max-width: 780px) {
-    .dash-content .boxes .box{
-        width: calc(100% / 2 - 15px);
-        margin-top: 15px;
-    }
 
-    /* .dash-content .boxes .box{
-        width: 100% ;
-    } */    
-}
-
-@media (max-width: 729px) {
-   /* .dash-content .boxes .box{
-        width: 100% ;
-    }  */
-    .dash-content .boxes .box{
-        gap: 0px 5%;
-    }   
-}
-
-@media (max-width: 650px) {
-    .dash-content .boxes .box{
-        width: 100% ;
-    }   
-}
-
-@media (max-width: 560px) {
-    .dash-content .boxes .box{
-        width: 100% ;
-    }   
-}
 
 @media (max-width: 400px) {
     nav{
