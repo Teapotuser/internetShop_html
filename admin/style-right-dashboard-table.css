@@ -288,3 +288,130 @@ body.dark .wrapper-icon .btn-delete:hover {
 }
 
 /* ===== End Таблица Вадим ===== */
+
+/* === Popup подтверждения удаления === */
+.white-popup-block {
+    position: relative;
+    background-color: var(--input-color);
+    color: var(--text-color-darker);
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+  }
+
+  .white-popup-block .confirm-delete-buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px 20px;
+  }
+
+  .white-popup-block button.mfp-close {
+    color: var(--text-color-darker);
+}
+
+  /* Кнопка Отменить */
+  .white-popup-block .admin-delete-cancel-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 12px;
+    text-decoration: none;
+    font-size: 16px; 
+    font-weight: 500;   
+    /* background-color: var(--primary-color); */
+    /* color: var(--title-icon-color); */
+    height: 35px;
+    width: 125px;
+    min-width: 122px;    
+    border-radius: 6px;    
+    transition: var(--tran-05);
+    cursor: pointer;
+
+    border: 1px solid var(--border-color);
+    background-color: var(--panel-color);
+    color: var(--text-color-darker);
+    outline: none;
+  }
+
+  body.dark .admin-delete-cancel-button {
+    background-color: var(--primary-color);
+  }
+
+  
+  .admin-delete-cancel-button .admin-delete-cancel-icon {
+    background-image: url(images/noun-no-3938525-grey444746.svg);    
+    /* background-size: auto, auto;    */
+	background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;
+    height: 16px;
+    width: 16px;
+    /* max-height: 10px; */
+    /* max-width: ; */
+    min-width: 16px;
+    transition: var(--tran-05);
+}
+
+body.dark .admin-delete-cancel-button .admin-delete-cancel-icon {
+    background-image: url(images/noun-no-3938525-light-grey.svg);    
+    /* background-size: auto, auto;    */
+	background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;
+    transition: var(--tran-05);
+}
+
+/* Кнопка ДА удалить Категорию */
+.white-popup-block .admin-delete-yes-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 10%;
+    text-decoration: none;
+    font-size: 16px; 
+    font-weight: 500;   
+    background-color: var(--primary-color);
+    color: var(--title-icon-color);
+    height: 35px;   
+    width: 125px;
+    min-width: 122px;    
+    border-radius: 6px;     
+    border: none;   
+    transition: var(--tran-05);
+    cursor: pointer;
+    
+    /* text-align: center;
+    padding: 18px 0;*/    
+ }
+
+ body.dark .admin-delete-yes-button {
+    border: 1px solid var(--border-color);
+    background-color: var(--panel-color);
+ }
+ 
+ .admin-delete-yes-button .admin-delete-yes-icon {
+    background-image: url(images/noun-ok-5506550-white.svg);    
+    /* background-size: auto, auto;    */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;
+    height: 21px;
+    width: 21px;
+    /* max-height: 10px; */
+    /* max-width: ; */
+    min-width: 21px;
+    transition: var(--tran-05);
+ }
+ 
+ body.dark .admin-delete-yes-button .admin-delete-yes-icon {
+    background-image: url(images/noun-ok-5506550-light-grey.svg);    
+    /* background-size: auto, auto;    */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;
+    transition: var(--tran-05);
+ }
