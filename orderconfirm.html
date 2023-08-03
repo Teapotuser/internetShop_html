@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
 
     <link rel="stylesheet" href="css/order-form.css" type="text/css">
+    <link rel="stylesheet" href="css/order-confirm.css" type="text/css">
     <link rel="stylesheet" href="css/cart.css" type="text/css">
     <link rel="stylesheet" href="css/footer_final.css" type="text/css">
     <link rel="stylesheet" href="css/adaptive.css" type="text/css">
@@ -179,160 +180,71 @@
             <div class="shop-wrapper">               
                 <!-- левая панель -->                
                 <section class="right-side"> <!-- Правая галерея товаров -->              
-                    <h2 class="section-header">Оформление заказа</h2>
+                    <h2 class="section-header">Подтверждение оформления заказа</h2>
                    <!--  Форма адреса -->
-                   <form class="form-order">
-                        <div class="form-order-wrapper">
-                            <div class="decor form-order-panel">
-                                <!--  <div class="form-left-decoration"></div>
-                                <div class="form-right-decoration"></div> 
-                                <div class="circle"></div> -->
-                                <div class="form-inner">
-                                    <h3>Контактная информация</h3>
-                                    <input type="text" placeholder="Имя *" minLength="1" maxLength="150" required >
-                                    <input type="text" placeholder="Фамилия *" minLength="1" maxLength="150" required >
-                                    <input type="email" placeholder="Email *" minLength="1" maxLength="150" required>
-                                    <input type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Номер телефона *" minLength="1" maxLength="20" required >
-                                    <!-- <textarea placeholder="Сообщение..." rows="3"></textarea> -->
-                                    <a href="" class="is-registered-question">Вы уже зарегистрированы?</a>
-                                    <p class="info-text">Вы можете создать аккаунт после оформления заказа</p>
-                                    <div class="form-inner-checkbox">
-                                        <!-- <input type="checkbox" id="create-account" name="create-account">
-                                        <label for="create-account" class="label-checkbox">Зарегистрировать аккаунт</label> -->
+                   <div class="order-confirm-container">
+                        <h3>Ваш заказ №<span>112233</span> принят!</h3>
+                        <!-- <div class="order-confirm-img-container">
+                            <img class="" src="images/NICI/shopping_cart_with_bags_lion_einhorn.png">
+                        </div> -->
+                        <div class="order-confirm-table-container">
+                            <div class="order-confirm-table-left-column">
+                                <p>Благодарим за заказ!</p>
+
+                                <b><i>Если была новая регистрация:</i></b>
+                                <p>Вы успешно зарегистрированы. Доступ к личному кабинету, пароль, а также информацию о заказе мы отправили на вашу почту <span>email-in-order@mail.ru</span>.</p>
+                                                                                               
+                                <b><i>Если не было новой регистрации:</i></b>
+                                <p>Данные заказа мы отправили на вашу почту <span>email-in-order@mail.ru</span>. 
                                     
-                                        <input type="checkbox" id="create-account" name="create-account">
-                                        <label for="create-account">
-                                        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="svg-checkbox">
-                                            <path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/>
-                                        </svg>
-                                        Зарегистрировать аккаунт
-                                        </label>                                       
-                                    </div>                                                                     
-
-                                    <!-- Поля ввода и подтверждения пароля -->
-                                    <div class="">
-                                        <input id="password" type="password" class="form-control input-margin-top password hidden @error('password') is-invalid @enderror" name="password" autocomplete="new-password" placeholder="Пароль *">
-    
-                                        <!-- @error('password')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror -->                                    
-                                    </div>                                
-                                    <div class="">
-                                        <input id="password-confirm" type="password" class="form-control password hidden" name="password_confirmation" autocomplete="new-password" placeholder="Подтвердите пароль *">
-                                    </div>
-                                    <!-- <input type="submit" value="Отправить"> -->
-                                </div>                                                   
-                            </div>
-                            <div class="form-order-middle-wrapper form-order-panel">
-                                <!--  Форма способа доставки -->
-                                <div class="decor">                                                             
-                                    <div class="form-inner">
-                                        <h3>Способ доставки</h3>
-                                        <ul class="ul-margin-bottom-zero">
-                                            <li>
-                                                <input type="radio" id="pickup" name="delivery-method" value="pickup" checked />
-                                                <label for="pickup">Самовывоз</label>
-                                            </li>
-                                            <li>
-                                                <input type="radio" id="post" name="delivery-method" value="post" />
-                                                <label for="post">Адресная доставка</label>
-                                            </li>
-                                        </ul>
-                                        <input type="text" placeholder="Адрес" class="delivery-address hidden input-margin-top" maxLength="250" >
-										<input type="text" placeholder="Город" class="delivery-address hidden" maxLength="150" >
-										<input type="text" placeholder="Индекс" class="delivery-address hidden" maxLength="10" >
-                                    </div>                               
+                                </p>В ближайшие 24 часа с вами свяжется менеджер магазина для уточнения деталей. Статус выполнения заказа вы можете отслеживать в личном кабинете.</p>
+                                
+                                <!-- <p>Отслеживайте свой заказ в личном кабинете</p> -->
+                                <div class="">
+                                    <div class="order-confirm-table-title">Детали заказа</div>
+                                    <table>
+                                        <tr>
+                                            <td>Итого:</td>
+                                            <td class="order-confirm-details-bold"><span>56.12</span><span> р.</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Доставка:</td>
+                                            <td class="order-confirm-details-bold">Самовывоз из магазина</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Способ оплаты:</td>
+                                            <td class="order-confirm-details-bold">Наличный расчет</td>
+                                        </tr>
+                                    </table>
                                 </div>
-                                <!--  Форма способа оплаты -->
-                                <div class="decor">    
-                                    <div class="form-inner">
-                                        <h3>Метод оплаты</h3>
-                                        <ul class="ul-margin-bottom-zero">
-                                            <li>
-                                                <input type="radio" id="cash" name="payment-method" value="cash" checked />
-                                                <label for="cash">Наличными</label>
-                                            </li>
-                                            <li>
-                                                <input type="radio" id="card" name="payment-method" value="card" />
-                                                <label for="card">Кредитной картой</label>
-                                            </li>
-                                        </ul>                                    
-                                    </div>  
-                                </div>      
+                                <p>Если у вас появятся вопросы, свяжитесь с нами по номеру…</p>
                             </div>
-                            <!-- Содержание заказа -->
-                            <div class="decor form-order-panel">                                
-                                <div class="form-inner">
-                                    <h3>Заказ</h3>
-                                     <!--  Таблица товаров в корзине -->
-                                    <div class="orderform-cart-table-container">
-                                        <!-- Заголовок таблицы -->
-                                        <div class="orderform-cart-row" data-set="relative">   
-                                            <div class="orderform-cart-item-container orderform-cart-column" data-set="50%">
-                                                <span class="orderform-cart-item orderform-cart-header">Товар</span>
-                                            </div>
-                                            <div class="orderform-cart-qtysum-container orderform-cart-column" data-set="50%">
-                                                <span class="orderform-cart-quantity orderform-cart-header">Кол-во</span>
-                                                <span class="orderform-cart-sum orderform-cart-header">Сумма</span>                                            
-                                            </div>
-                                        </div>
-                                         <!-- Строка таблицы -->
-                                        <div class="orderform-cart-row">
-                                            <div class="orderform-cart-item-container orderform-cart-column" data-set="50%">
-                                                <div class="orderform-cart-item">
-                                                    <a href="#" class="orderform-cart-title">Мягкая игрушка Овечка Jolly Frances</a>
-                                                    <div class="orderform-cart-article">Артикул: NICI1111</div>
-                                                    <div class="orderform-cart-size">Размер: 25 см</div>                                                
-                                                </div>
-                                            </div>  
-                                            <div class="orderform-cart-qtysum-container orderform-cart-column" data-set="50%">  
-                                                <div class="orderform-cart-quantity">                                                    
-                                                    <span>2</span><span>шт.</span>
-                                                </div>
-                                                <div class="orderform-cart-sum">                                                   
-                                                    <span>53.12</span><span> р.</span> 
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="orderform-cart-row">
-                                            <div class="orderform-cart-item-container orderform-cart-column" data-set="50%">
-                                                <div class="orderform-cart-item">
-                                                    <a href="#" class="orderform-cart-title">Мягкая игрушка Овечка Jolly Frances</a>
-                                                    <div class="orderform-cart-article">Артикул: NICI1111</div>
-                                                    <div class="orderform-cart-size">Размер: 25 см</div>                                                
-                                                </div>
-                                            </div>  
-                                            <div class="orderform-cart-qtysum-container orderform-cart-column" data-set="50%">  
-                                                <div class="orderform-cart-quantity">                                                    
-                                                    <span>2</span><span>шт.</span>
-                                                </div>
-                                                <div class="orderform-cart-sum">                                                   
-                                                    <span>53.12</span><span> р.</span> 
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- <div class="orderform-cart-total">
-                                            <strong class="main-cart-total-title">Итого:</strong>
-                                            <span class="main-cart-total-price">53.12 р.</span>
-                                        </div>   -->
-                                    </div>  
-                                    <div class="orderform-cart-total">
-                                        <strong class="orderform-cart-total-title">Всего:</strong>
-                                        <span class="orderform-cart-total-price">53.12 р.</span>
-                                    </div>    
-                                    <!-- <input type="submit" value="Отправить"> -->
-                                    <div class="orderform-center-button">
-                                    <button type="button" class="main-cart-button-order">Оформить заказ</button>
-                                    <!-- <a href="#" type="button" class="main-cart-button-order">Оформить заказ</a> -->
-                                    </div>
-                                </div>                                                   
+                            <div class="order-confirm-table-right-column">
+                                <div class="order-confirm-img-container">
+                                    <img class="" src="images/NICI/shopping_cart_with_bags_lion_einhorn.png">
+                                </div>
+                                <!-- <div>Детали заказа</div>
+                                <table>
+                                    <tr>
+                                        <td>Итого:</td>
+                                        <td><span>56.12</span><span> р.</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Доставка:</td>
+                                        <td>Самовывоз из магазина</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Способ оплаты:</td>
+                                        <td>Наличный расчет</td>
+                                    </tr>
+                                </table> -->
                             </div>
-
-                        </div>        
-                    </form>
-                    
+                        </div>
+                        <!-- <div class="order-confirm-img-container">
+                            <img class="" src="images/NICI/shopping_cart_with_bags_lion_einhorn.png">
+                        </div> -->
+                    </div>
+                    <a href="#" class="btn-buy">Продолжить покупки</a>
                 </section> 
             </div> 
         </div>

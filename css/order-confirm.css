@@ -1,0 +1,55 @@
+.order-confirm-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-confirm-container h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.order-confirm-table-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.order-confirm-table-left-column {
+    width: 65%;
+}
+
+.order-confirm-table-right-column {
+    width: 30%;
+}
+
+.order-confirm-img-container {
+    width: 320px;
+    height: auto;
+}
+
+.order-confirm-img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.order-confirm-table-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.order-confirm-table-container table {
+    width: 100%;
+}
+
+.order-confirm-table-container table tr {
+    height: 26px;
+}
+
+.order-confirm-details-bold {
+    font-weight: 600;
+}
